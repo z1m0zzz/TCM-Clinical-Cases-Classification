@@ -10,7 +10,7 @@ from tqdm import tqdm
 
 # ================= 配置区域 =================
 # 1. API 配置
-API_KEY = "sk-k3EB5eFJ4S9KtIt8anzUtgDhTmCuRSX7mUHiRH5faWTXdkWZ" 
+API_KEY = os.environ.get("OPENAI_API_KEY")
 BASE_URL = "https://api.chatanywhere.tech/v1"
 MODEL_NAME = "gpt-4o-mini"  
 
